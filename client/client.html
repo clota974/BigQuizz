@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Big Buzz</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery.js"></script>
+    <script src="/client.js"></script>
+
+    <link rel="stylesheet" href="/client.css">
+</head>
+<body>
+    <section class="auth">
+        <img src="/logo.png" alt="">
+        <p class="big">Prêt.e pour le <span>Big Quiz</span> ?</p><br/>
+        <p>Entre ton pseudo :</p><br/>
+        <input type="text" id="pseudo" value=""><br/>
+        <button id="play">Jouer</button>
+    </section>
+    <section class="game">
+        <div class="answer-box">
+            <div class="answer a select">A</div>
+            <div class="answer b correct">B</div>
+            <div class="answer c wrong">C</div>
+            <div class="answer d">D</div>
+        </div>
+        <p>
+            PSEUDO : <span class="pseudo">clota974</span><br/>
+            POINTS : <span class="pts">32</span><br/>
+            <b>RANG : <span class="rang">1</span><br/></b>
+            <img src="/logo.png" alt="">
+        </p>
+    </section>
+</body>
+</html>

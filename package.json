@@ -1,5 +1,5 @@
 {
-  "name": "gamesconnect",
+  "name": "bigquizz",
   "version": "0.0.1",
   "description": "A sample Node.js app",
   "main": "electron.js",
@@ -9,6 +9,11 @@
   "dependencies": {
     "ansi-colors": "^2.0.2",
     "express": "^4.16.3",
-    "socket.io": "^2.1.1"
+    "qrcode": "^1.4.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.0.4"
   }
 }

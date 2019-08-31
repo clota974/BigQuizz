@@ -1,0 +1,21 @@
+{
+    "titre": "Bienvenue au <br/>Big Quizz!",
+    "data": [
+        {
+            "question": "Quelle est la préfécture de La Réunion ?",
+            "reponses": ["St-Denis", "St-Pierre", "Paris", "Bordeaux"]
+        },
+        {
+            "question": "Quel personnage de dessin animé est connu pour sa grande mèche jaune sur la tête?",
+            "reponses": ["Titeuf", "Peppa Pig", "Mickey", "Dora"]
+        },
+        {
+            "question": "Laquelle de ces radios est d'origine réunionnaise ?",
+            "reponses": ["Freedom", "Fun Radio", "NRJ", "Rires et chansons"]
+        },
+        {
+            "question": "Simba est le personnage principal de quel film ?",
+            "reponses": ["Roi Lion", "Reine des Neiges", "Violetta", "Mickey Mouse"]
+        }
+    ]
+}

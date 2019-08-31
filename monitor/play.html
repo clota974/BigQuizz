@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Serveur</title>
+
+    <link rel="stylesheet" href="play.css">
+
+    <script src="../electron-jquery.js"></script>
+    <script src="src/snap.svg.js"></script>
+    <script src="play.js"></script>
+    <script src="../classes/server.js"></script>
+    <script src="../classes/question.js"></script>
+    <script src="../classes/party.js"></script>
+    <script src="../classes/peer.js"></script>
+    <script src="../classes/user.js"></script>
+</head>
+<body>
+    <section class="options">
+        <h3>Options</h3>
+        <div class="part">
+            <h6>Questions</h6>
+            <button id="loadFile">Charger un fichier</button> <button id="defaultFile">Par défaut</button> <button id="editFile">Editeur</button> <br/>
+            <p>Nombre de questions : <span id="numberOfQuestions">0</span> | Titre : <span id="gameTitle">Aucun</span> <br/>
+            Fichier chargé : <span id="filename">Aucun</span></p>
+        </div>
+        <div class="part">
+            <h6>Jouer</h6>
+            Game code : <input type="text" id="gameCode"> <button id="serverStart">Démarrer</button> <button id="serverStop">Stop</button> <br/>
+            <p>
+                Statut serveur : <span id="serverStatus">Arrêt</span> | Joueurs : <span id="numberOfPlayers">0</span><br/>
+                Lien : <span class="link">aucun</span>
+            </p>
+        </div>
+        <div class="part">
+            <h6>Actions</h6>
+            <button id="resetScore">Reset score</button> <button id="disconnectAll">Déconnecter tous</button>
+            <p>Questions restantes : <span id="remaining">0</span></p>
+        </div>
+        <div class="part settings">
+            <h6>Paramètres</h6>
+            <p>
+                Pts pour bonne réponse : <input type="number" id="scoreBonneReponse" value="1"><br/>
+                Pts en moins pour mauvaise Réponse : <input type="number" id="scoreMauvaiseReponse" value="0"><br/>
+                Bonus pour le plus rapide : <input type="number" id="scorePlusRapide" value="0"><br/>
+                Malus pour le plus lent : <input type="number" id="scorePlusLent" value="0"><br/>
+                Secondes au chrono : <input type="number" id="timerMax" value="20"><br/>
+                Temps entre questions : <input type="number" id="tempsEntreQuestions" value="8"><br/>
+                Zoom : <input type="number" id="zoom" value="100" step="15"><br/>
+                Fin prévue dans : <span id="endTime">0s</span>
+            </p>
+        </div>
+    </section>
+    <section class="welcome">
+        <img src="src/logo.png" class="logo" alt="">
+        <h1>Le Big<br/>Quizz</h1>
+
+        <div class="qrCode"></div>
+    </section>
+    <section class="screen unopaque">
+
+        <header>
+            <h2>Question <span class="question-number">1</span></h2>
+        </header>
+
+        <div class="question-box zoomed">
+            <div></div>
+        </div>
+        <div class="answer-box zoomed">
+            <div class="answer">
+                <div class="letter">A</div>
+                <div class="text">Paris</div>
+                <div class="effectif">25</div>
+            </div>
+            <div class="answer">
+                <div class="letter">B</div>
+                <div class="text">Marseille</div>
+                <div class="effectif">2</div>
+            </div>
+            <div class="answer">
+                <div class="letter">C</div>
+                <div class="text">La Réunion</div>
+                <div class="effectif">5</div>
+            </div>
+            <div class="answer">
+                <div class="letter">D</div>
+                <div class="text">Bordeaux</div>
+                <div class="effectif">0</div>
+            </div>
+        </div>
+
+        <div class="timer">
+            <div class="countdown"></div>
+            <div class="timerbg">
+                <div class="timerline"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="winner unopaque">
+        <h2>Le vainqueur est</h2>
+        <h1>Clota974, gillol</h1>
+        <img src="src/trophy.png" class="trophy" alt=""><br/>
+        <img src="src/logo.png" class="logo" alt="">
+    </section>
+    <section class="ranking">
+        <h3>Score</h3>
+        <div class="player-list">
+            <div class="player" data-id="1919">
+                <div class="patch"></div>
+                <div class="name">clota974</div>
+                <div class="score">25</div>
+            </div>
+        </div>
+        <div class="joinus">
+            <h2>Rejoins la partie!</h2>
+            <p>Sur ton mobile ouvre le lien suivant :</p>
+            <div class="link">...</div>
+            <p>Toi aussi deviens le maitre du quizz!</p>
+            <img src="src/logo.png" alt="">
+        </div>
+    </section>
+</body>
+</html>

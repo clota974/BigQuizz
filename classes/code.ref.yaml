@@ -1,0 +1,22 @@
+# SIGNALS
+
+## SUCCESS (Y)
+Y1: Successfully connected
+Y2: User {name} registered
+
+## ERRORS (E)
+E0: Unknown error
+E1: null
+E2: Username taken
+E3: Vous avez été déconnecté par le serveur
+
+## CONFIG (C)
+C1: Username registration
+
+## GAME (G) (Serveur)
+G1: Nouvelle question
+G2: Révèle la bonne réponse
+
+## MOBILE GAME (M) (Client)
+M1: Envoi de la réponse à la question
+
