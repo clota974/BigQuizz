@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "ansi-colors": "^2.0.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "qrcode": "^1.4.1",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.2.0"
